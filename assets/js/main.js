@@ -7,9 +7,6 @@ $(document).ready(function() {
         e.preventDefault();
 
         var date = $("#data_historico").val();
-
-        $("#wrap_old_quota").remove('#old_quota_president');
-
         get_quota_by_date("https://api.exchangeratesapi.io/" + date, date);
     });
 });
@@ -36,16 +33,16 @@ function get_quota_by_date(url, date) {
             var formated = new Intl.NumberFormat('pt-BR', {maximumSignificantDigits: 3}).format(data['rates']['BRL']);
 
             var temp = date.split('-');
-            console.log(temp);
+            console.log(parseInt(temp[0]));
 
-            if (parseInt(temp[0]) >= 2008 || parseInt(temp[0]) <= 2011) {
-                $("#wrap_old_quota").append('<img src="assets/images/lulinha.jpg" class="img-fluid mt-3 mb-5" style="width: 50%;" id="old_quota_president">');
-            } else if (parseInt(temp[0]) >= 2012 || parseInt(temp[0]) <= 2016) {
-                $("#wrap_old_quota").append('<img src="assets/images/dilminha.jpg" class="img-fluid mt-3 mb-5" style="width: 50%;" id="old_quota_president">');
-            } else if (parseInt(temp[0]) >= 2017 || parseInt(temp[0]) <= 2018) {
-                $("#wrap_old_quota").append('<img src="assets/images/vampirao.jpg" class="img-fluid mt-3 mb-5" style="width: 50%;" id="old_quota_president">');
+            if (parseInt(temp[0]) <= 2011) {
+                $("#old_quota_president").attr('src', 'assets/images/lulalindo.png');
+            } else if (parseInt(temp[0]) >= 2012 && parseInt(temp[0]) <= 2016) {
+                $("#old_quota_president").attr('src', 'assets/images/dilmae.png');
+            } else if (parseInt(temp[0]) >= 2017 && parseInt(temp[0]) <= 2018) {
+                $("#old_quota_president").attr('src', 'assets/images/vampiraodacabecona.png');
             } else {
-                $("#wrap_old_quota").append('<img src="assets/images/presidente-bonoro.jpg" class="img-fluid mt-3 mb-5" style="width: 50%;" id="old_quota_president">');
+                $("#old_quota_president").attr('src', 'assets/images/bolsadecoco.png');
             }
 
             $("#old_quota").text("R$" + formated);

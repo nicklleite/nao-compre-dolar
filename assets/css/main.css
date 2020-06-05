@@ -27,3 +27,10 @@
 .debug {
     border: 1px solid red !important;
 }
+
+/**
+ * MISC
+ */
+footer {
+    padding: 20px 0;
+}
