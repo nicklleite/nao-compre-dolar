@@ -1,0 +1,29 @@
+/**
+ *  Fontes
+ */
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.font-family-inter { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  .font-family-inter { font-family: 'Inter var', sans-serif; }
+}
+
+.font-family-dancing {
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/**
+ * MISC
+ */
+.no-gutter {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.no-border-radius {
+    border-radius: 0 !important;
+}
+.debug {
+    border: 1px solid red !important;
+}
