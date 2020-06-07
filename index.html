@@ -1,19 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40094593-4"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40094593-5"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'UA-40094593-4');
+            gtag('config', 'UA-40094593-5');
         </script>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Não Compre Dólar Agora! | Auto flagelamento mental. | BETA</title>
+
+        <!-- Primary Meta Tags -->
+        <title>Não Compre Dólar Agora! | Auto flagelamento mental | BETA</title>
+        <meta name="title" content="Não Compre Dólar Agora! | Auto flagelamento mental | BETA">
+        <meta name="description" content="Venha conosco em uma jornada no tempo, onde o mundo era um lugar completamente diferente. Nossa primeira e única parada é a cotação do dólar.">
+        <meta name="keywords" content="cotação do dólar, dólar, cotação, passado">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://naocompredolar.com/">
+        <meta property="og:title" content="Não Compre Dólar Agora! | Auto flagelamento mental | BETA">
+        <meta property="og:description" content="Venha conosco em uma jornada no tempo, onde o mundo era um lugar completamente diferente. Nossa primeira e única parada é a cotação do dólar.">
+        <meta property="og:image" content="assets/images/seo.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="http://naocompredolar.com/">
+        <meta property="twitter:title" content="Não Compre Dólar Agora! | Auto flagelamento mental | BETA">
+        <meta property="twitter:description" content="Venha conosco em uma jornada no tempo, onde o mundo era um lugar completamente diferente. Nossa primeira e única parada é a cotação do dólar.">
+        <meta property="twitter:image" content="assets/images/seo.png">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/main.css">
@@ -44,7 +65,7 @@
             <div class="container">
                 <div class="jumbotron bg-transparent no-border-radius text-white text-center">
                     <h1 class="display-3 font-weight-bold">NCDA!</h1>
-                    <small>(a.k.a Não Compre Dólar Agora!)</small>
+                    <small>Não Compre Dólar Agora!</small>
                 </div>
             </div>
         </div>
@@ -78,7 +99,7 @@
             <form id="form-search-dollar">
                 <div class="form-row justify-content-md-center">
                     <div class="col-md-4 col-xs-6">
-                        <input type="date" class="form-control" id="data_historico">
+                        <input type="date" class="form-control" id="data_historico" min="2008-01-02" max="2018-12-31">
                     </div>
                     <div class="col-md-2 col-xs-6">
                         <button class="btn btn-block btn-primary mb-2" id="pesquisar_historico">Pesquisar</button>
@@ -92,13 +113,13 @@
             <div class="row mt-5">
                 <div class="col-md-6 col-xs-12 text-center" id="wrap_old_quota">
                     <h3 class="font-family-inter text-success">Antes</h3>
-                    <span class="font-weight-bold display-2 text-success" id="old_quota"></span>
+                    <span class="font-weight-bold display-2 text-success" id="old_quota"></span><br>
                     <img src="" class="img-fluid mt-3 mb-5" id="old_quota_president">
                 </div>
                 <div class="col-md-6 col-xs-12 text-center">
                     <h3 class="font-family-inter text-success">Hoje</h3>
-                    <span class="font-weight-bold display-2 text-success" id="current_quota"></span>
-                    <img src="assets/images/bolsadecoco.png" class="img-fluid mt-3 mb-5">
+                    <span class="font-weight-bold display-2 text-success" id="current_quota"></span><br>
+                    <img src="" class="img-fluid mt-3 mb-5" id="current_quota_president">
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@
 
 .font-family-inter { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
-  .font-family-inter { font-family: 'Inter var', sans-serif; }
+    .font-family-inter { font-family: 'Inter var', sans-serif; }
 }
 
 .font-family-dancing {
