@@ -84,7 +84,7 @@
                         <button class="btn btn-block btn-primary mb-2" id="pesquisar_historico">Pesquisar</button>
                     </div>
                     <div class="col-12 text-center">
-                        <small>Obs.: Infelizmente ainda não conseguimos dados de antes de 2008. ☹☹</small>
+                        <small>Obs.: Infelizmente ainda não conseguimos dados de antes do dia <strong>03/06/2015</strong>. ☹☹</small>
                     </div>
                 </div>
             </form>
@@ -115,6 +115,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js" integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0=" crossorigin="anonymous"></script>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
         <script src="assets/js/main.js"></script>
     </body>
 </html>
