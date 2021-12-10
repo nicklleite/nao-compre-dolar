@@ -29,6 +29,17 @@
 }
 
 /**
+ * TEMPLATE
+ */
+.loading {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 48px;
+    color: var(--success);
+}
+
+
+/**
  * MISC
  */
 footer {

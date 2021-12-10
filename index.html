@@ -89,13 +89,15 @@
                 </div>
             </form>
 
-            <div class="row mt-5">
-                <div class="col-md-6 col-xs-12 text-center" id="wrap_old_quota">
+            <div class="loading d-none"><i class="fas fa-spinner fa-pulse"></i></div>
+
+            <div class="row mt-5 result d-none">
+                <div class="col-md-6 col-xs-12 text-center d-none" id="wrap_old_quota">
                     <h3 class="font-family-inter text-success">Antes</h3>
                     <span class="font-weight-bold display-2 text-success" id="old_quota"></span><br>
                     <img src="" class="img-fluid mt-3 mb-5" id="old_quota_president">
                 </div>
-                <div class="col-md-6 col-xs-12 text-center">
+                <div class="col-md-6 col-xs-12 text-center d-none" id="wrap_current_quota">
                     <h3 class="font-family-inter text-success">Hoje</h3>
                     <span class="font-weight-bold display-2 text-success" id="current_quota"></span><br>
                     <img src="" class="img-fluid mt-3 mb-5" id="current_quota_president">

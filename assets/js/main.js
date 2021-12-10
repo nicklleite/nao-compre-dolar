@@ -1,18 +1,25 @@
 $(document).ready(function() {
     $("#pesquisar_historico").on('click', function(e) {
-        console.clear()
         e.preventDefault();
 
-        var now = new Date();
-        var today = now.getFullYear() + "" + (now.getMonth() + 1) + "" + now.getDate()
+        $(".result").addClass('d-none');
+        $(".loading").removeClass('d-none');
+        
+        setTimeout(function() {
+            var date = $("#data_historico").val(),
+                urlDate = date.replaceAll("-", ""),
+                urlPast = "https://economia.awesomeapi.com.br/json/daily/USD-BRL/?start_date=" + urlDate + "&end_date=" + urlDate,
+                urlNow = "https://economia.awesomeapi.com.br/last/USD-BRL"
+    
+            get_quota_by_date(urlPast, date);
+            get_current_quota(urlNow);
+    
+            $(".loading").addClass('d-none');
+            $(".result").removeClass('d-none');
+            $("#wrap_old_quota").removeClass('d-none');
+            $("#wrap_current_quota").removeClass('d-none');
+        }, 5000);
 
-        var date = $("#data_historico").val(),
-            urlDate = date.replaceAll("-", ""),
-            urlPast = "https://economia.awesomeapi.com.br/json/daily/USD-BRL/?start_date=" + urlDate + "&end_date=" + urlDate,
-            urlNow = "https://economia.awesomeapi.com.br/last/USD-BRL"
-
-        get_quota_by_date(urlPast, date);
-        get_current_quota(urlNow);
     });
 });
 
@@ -26,8 +33,6 @@ function get_quota_by_date(url, date) {
             let response = data[0]
             
             var formated = new Intl.NumberFormat('pt-BR', {maximumSignificantDigits: 3}).format(response.bid);
-            console.log(formated)
-            
             var temp = date.split('-');
 
             if (parseInt(temp[0]) <= 2010) {
