@@ -43,6 +43,8 @@ html {
         --sidebar-accent-foreground: 0 0% 30%;
         --sidebar-border: 0 0% 91%;
         --sidebar-ring: 217.2 91.2% 59.8%;
+
+        --font-color: #333;
     }
 
     .dark {
@@ -78,6 +80,8 @@ html {
         --sidebar-accent-foreground: 240 4.8% 95.9%;
         --sidebar-border: 0 0% 15.9%;
         --sidebar-ring: 217.2 91.2% 59.8%;
+
+        --font-color: #fff;
     }
 }
 
@@ -88,5 +92,6 @@ html {
 
     body {
         @apply bg-background text-foreground;
+        font-family: 'Inter', sans-serif;
     }
 }
